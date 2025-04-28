@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 // Find your Account SID and Auth Token at twilio.com/console
 // and set the environment variables. See http://twil.io/secure
-const accountSid = "ACcbeab1da4dc567d3ee34617fe01d98ef";
+const accountSid = "process.env.TWILIO_ACCOUNT_SID;";
 const authToken = process.env.token;
 const client = twilio(accountSid, authToken);
 
